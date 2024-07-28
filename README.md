@@ -1,3 +1,4 @@
+# GITHUB Link: https://github.com/dudhatnavdeep12/web_final_project_8894325/
 # E-Commerce Project (Electronics)
 
 **Student Name**: Navdeep Dudhat
@@ -12,7 +13,7 @@
 
 ### Project Setup
 
-1. **Project Initialization**: Repository created on GitHub and cloned to local machine.
+1. **Project Initialization**: Repository created on GitHub and cloned to local machine.I have two branch other than main. Please select frontend for `frontend` and backend for `backend`.
 2. **Frontend Setup**: Initialized Angular project.
 3. **Backend Setup**: Initialized Node.js project with Express and connected to MongoDB (Atlas).
 
@@ -51,8 +52,16 @@
 
  ### Frontend Setup
 
-1. Basic structure set up for Angular components, including directories for components and services.
-2. State management planned to handle user sessions and cart data.
+1. Download all the file from the Frontend branch.
+2. now open it in vs code.
+3. now open terminal and type `npm install` command(This will take 2-3 min).
+4. To run the project type `ng serve` command
+
+### Backend Setup
+1. Download all the files from the Backend branch
+2. now open it in vs code.
+3. now open terminal and type `npm install` command.
+4. now to run this app type `node app.js`.
 
 ### Notes
 
