@@ -1,0 +1,46 @@
+<<<<<<< HEAD
+<p>admin works!</p>
+=======
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">ElectronicsStore</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="/admin">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink=""><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="table">
+    <h1>Products</h1>
+    <button routerLink="/create">Create Product</button>
+    <table>
+      <tr>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Seller Name</th>
+        <th>Stock</th>
+        <th>Edit</th>
+        <th>Delete</th>
+ 
+      </tr>
+      <tr *ngFor="let item of products ">
+        <td>{{item.name}}</td>
+        <td>{{item.category}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.sellername}}</td>
+        <td>{{item.stock}}</td>
+        <td><button routerLink="/edit/{{item.productid}}">Edit</button></td>
+        <td><button  (click)="deleteProducts(item.productid)">Delete</button></td>
+   
+      </tr>
+
+    </table>
+  </div>
+>>>>>>> 61c188b (Implementation of Admin Login and perform CRUD operation, Implement a simple checkout process and add order summary page)

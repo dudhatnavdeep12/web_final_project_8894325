@@ -1,0 +1,59 @@
+<app-nav></app-nav> 
+
+<main>
+    <div class="basket">
+      
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+<<<<<<< HEAD
+=======
+          <li class="price">Quantity</li>
+>>>>>>> 61c188b (Implementation of Admin Login and perform CRUD operation, Implement a simple checkout process and add order summary page)
+        </ul>
+      </div>
+      <div class="basket-product" *ngFor="let item of cartitems">
+        <div class="item">
+          <div class="product-image">
+            <img src="{{item.image}}" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <p><strong>{{item.name}}</strong></p>
+            <p>Product Code - {{item.productid}}</p>
+          </div>
+        </div>
+        <div class="price">{{item.price}}</div>
+<<<<<<< HEAD
+  
+=======
+        <div>X 1</div>
+>>>>>>> 61c188b (Implementation of Admin Login and perform CRUD operation, Implement a simple checkout process and add order summary page)
+        <div class="remove">
+          <button (click)="removeItem(item.productid)">Remove</button>
+        </div> 
+      </div>
+
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">{{total}}</div>
+        </div>
+        
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">{{total}}</div>
+        </div>
+        <div class="summary-checkout">
+<<<<<<< HEAD
+          <button class="checkout-cta">Go to Checkout</button>
+=======
+          <button class="checkout-cta" routerLink="/checkout">Go to Checkout</button>
+>>>>>>> 61c188b (Implementation of Admin Login and perform CRUD operation, Implement a simple checkout process and add order summary page)
+        </div>
+      </div>
+    </aside>
+  </main>

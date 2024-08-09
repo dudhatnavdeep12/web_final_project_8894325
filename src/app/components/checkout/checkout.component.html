@@ -1,0 +1,31 @@
+<<<<<<< HEAD
+<p>checkout works!</p>
+=======
+<app-nav></app-nav>
+<div class="container">
+    <form action="/action_page.php" [formGroup]="addressForm" (ngSubmit)="ConfirmOrder()">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="First Name" formControlName="fname"  >
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Last Name" formControlName="lname"   >
+  
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email Id" formControlName="email"  >
+      <label for="subject">Street</label>
+     <input type="text" id="street" name="street" placeholder="Street" formControlName="street"  >
+     
+     <label for="subject">City</label>
+     <input type="text" id="city" name="city" placeholder="city" formControlName="city" >
+
+      <label for="province">Province</label>
+      <select id="province" formControlName="state">
+        <option value="Ontario">Ontario</option>
+        <option value="Alberta">Alberta</option>
+        <option value="Queubec">Queubec</option>
+      </select>
+       
+      <input type="submit" value="Submit" >
+    </form>
+  </div>
+>>>>>>> 61c188b (Implementation of Admin Login and perform CRUD operation, Implement a simple checkout process and add order summary page)
