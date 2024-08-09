@@ -1,0 +1,14 @@
+<app-nav></app-nav>
+
+<div class="container">
+    <form action="/action_page.php" [formGroup]="login" (ngSubmit)="loginAdmin()">
+      <label for="uname">First Name</label>
+      <input type="text" id="uname" name="username" placeholder="User Name" formControlName="uname"  >
+  
+      <label for="ps">Password</label>
+      <input type="password" id="ps" name="password" placeholder="Password" formControlName="ps"   >
+  
+       
+      <input type="submit" value="Login" >
+    </form>
+  </div>
